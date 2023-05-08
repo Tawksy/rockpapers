@@ -1,85 +1,89 @@
 console.log("We play Rock, Paper, Scissors");
 
-const playableHands = ["rock", "paper", "scissor", "scissors"];
-
-
-
 //Get Player's Choice through prompt
 
-let playerChoice = prompt("Please enter which hand you want to play");
+let promptChoice = prompt("Please enter which hand you want to play");
+let computerHand  
+let playerChoice
 
-
-if (playableHands.includes(playerChoice.toLowerCase())) {
-    let capitalizedHands = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1).toLowerCase();
-} else {
-    console.log("Invalid Choice!");
-    }
-  
-
-//-------------------------------------------------
-// Playable hands 
+// Playable hands variable 
 
 const choices = ["rock", "paper", "scissors"];
+const playableHands = ["rock", "paper", "scissors"];
 
+// result variable 
+
+let result 
+
+
+
+// transform user input to be case insensitive
+
+function caseInsensitivePrompt() {
+    if (playableHands.includes(promptChoice.toLowerCase())) {
+        return playerChoice = promptChoice.toLowerCase();
+    } else {
+        console.log("Invalid Choice!");
+        }
+}
 
 // Function to get computers Choice, randomly. 
 
 function getComputerChoice() {   
     
-    const computerChoiceIndex = Math.floor(Math.random() * 3);
+    const computerChoiceIndex = Math.floor(Math.random() * 3) + 1;
     const computerChoice = choices[computerChoiceIndex];
     return computerChoice;
     }
 
-let computerHand = getComputerChoice();
 
 
-//----------------------------------------------
+// computerHand vs. playerChoice 
 
-//Function to determine ethe outcome of the game 
+function playHand() {
 
-function outcomeGame(result) {
-    return result;
-}
-// Make computerHand play versus playerChoice 
-
-
-function playTheGame(playerChoice, computerHand) {
-
-
-    if (playerChoice === "rock") {
-        if (computerHand === "rock") {
-            return outcomeGame('Even'); 
-        } else if (computerHand === "paper") {
-            return outcomeGame('You lost!'); 
-        } else {
-            return outcomeGame('You win');
+    if (computerHand === 'rock' && playerChoice === 'rock') {
+        result = 'CPU and You both had Rock: Its a tie!'
     }
-}   
-    else if (playerChoice === 'paper') {
-        if (computerHand === 'rock') {
-            return outcomeGame('You win');
-    }   else if (computerHand === 'paper') 
-            return outcomeGame('Even'); 
-       else {
-            return outcomeGame('You lost!');
-}
-}
-    else if (playerChoice === 'scissors') {
-        if (computerHand === 'rock') {
-            return outcomeGame('You lost!');
-    }   else if (computerHand === 'paper') {
-            return outcomeGame('You win');
-    }   else {
-            return outcomeGame('Even');
+    if (computerHand === 'rock' && playerChoice === 'paper') {
+        result = 'CPU: Rock, You: Paper => You win!'
+    }
+    if (computerHand === 'rock' && playerChoice === 'scissors') {
+        result = 'CPU: Rock, You: Scissors => You lost!'
+    }
+    if (computerHand === 'paper' && playerChoice === 'paper') {
+        result = 'CPU and You both had Paper: Its a tie!'
+    }
+    if (computerHand === 'paper' && playerChoice === 'scissors') {
+        result = 'CPU: Paper, You: Scissors => You win!'
+    }
+    if (computerHand === 'paper' && playerChoice === 'rock') {
+        result = 'CPU: Paper, You: Rock => You lost!'
+    }
+    if (computerHand === 'scissors' && playerChoice === 'scissors') {
+        result = 'CPU and You both had Scissors: Its a tie!'
+    }
+    if (computerHand === 'scissors' && playerChoice === 'rock') {
+        result = 'CPU: Scissors, You: Rock => You win!'
+    }
+    if (computerHand === 'rock' && playerChoice === 'scissors') {
+        result = 'CPU: Scissors, You: Paper => You lost!'
     }
 }
 
-}
+playerChoice = caseInsensitivePrompt();
+computerHand = getComputerChoice();
+playHand(computerHand, playerChoice);
+console.log(result);
+
+/// Game function is supposed to loop 5 times 
 
 
 
-console.log(playTheGame(playerChoice, computerHand));
+// -------------------- NOT WORKING RIGHT NOW 
+// --------------------
+
+
 
 
 
