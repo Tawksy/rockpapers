@@ -3,6 +3,15 @@ A simple rock paper scissors browser game
 
  
 
+Version 1.0.3: 
+11.05.2023 
+
+- Added a textform with userinput 
+- Applied style to it 
+- This is a preparation for the new game system that will be implemented 
+
+** Issue undefined print-statement remains 
+
 Version 1.0.2:  
 11.05.2023
 
