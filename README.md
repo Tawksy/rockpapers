@@ -1,9 +1,19 @@
 # rockpapers
 A simple rock paper scissors browser game
 
-06.05.2023: 
+ 
+
+Version 1.0.2:  
+11.05.2023
+
+- Styled the HTML: Added different sections and images 
+- Added CSS styling: colors, fonts, flexbox 
+- Various smaller design changes
+
+** The issue with undefined print-statement remains for now. Will be fixxed soon.
 
 Version 1.0.1: 
+07.05.2023
 
 - Stabilized the responsible functions to play out the game 
 
@@ -11,6 +21,7 @@ Version 1.0.1:
 The console log prints out "undefined" at random times, despite correct user input. 
 
 Version 1.0 
+04.05.2023
 
 - Properly working function to play the game has been added 
 - Console output has been reduced to necessary print statements: The welcome message and the result 
