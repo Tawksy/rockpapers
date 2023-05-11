@@ -1,7 +1,7 @@
 # rockpapers
 A simple rock paper scissors browser game
 
-06.05.2023: 
+11.05.2023: 
 
 Version 1.0.2: 
 
