@@ -19,6 +19,18 @@
     font-weight: bolder
 }
 
+.middle-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 20px;
+}
+
+.middle-input-container {
+    display: flex;
+    justify-content: center;
+}
 .middle-container {
     background-color: rgb(249, 243, 236);
     display: flex;
