@@ -9,6 +9,7 @@ Version 1.0.2:
 - Styled the HTML: Added different sections and images 
 - Added CSS styling: colors, fonts, flexbox 
 - Various smaller design changes
+
 ** The issue with undefined print-statement remains for now. Will be fixxed soon.
 
 Version 1.0.1: 
