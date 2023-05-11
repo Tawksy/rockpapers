@@ -2,7 +2,6 @@ console.log("We play Rock, Paper, Scissors");
 
 //Get Player's Choice through prompt
 
-let promptChoice = prompt("Please enter which hand you want to play");
 let computerHand  
 let playerChoice
 
@@ -20,6 +19,7 @@ let result
 // transform user input to be case insensitive
 
 function caseInsensitivePrompt() {
+    let promptChoice = prompt("Please enter which hand you want to play");
     if (playableHands.includes(promptChoice.toLowerCase())) {
         return playerChoice = promptChoice.toLowerCase();
     } else {
@@ -71,12 +71,42 @@ function playHand() {
     }
 }
 
+// Game: 1 
+
+playerChoice = caseInsensitivePrompt();
+computerHand = getComputerChoice();
+playHand(computerHand, playerChoice);
+console.log(computerHand, playerChoice);
+
+// Game 2: 
+
 playerChoice = caseInsensitivePrompt();
 computerHand = getComputerChoice();
 playHand(computerHand, playerChoice);
 console.log(result);
 
-/// Game function is supposed to loop 5 times 
+// Game :3 
+
+playerChoice = caseInsensitivePrompt();
+computerHand = getComputerChoice();
+playHand(computerHand, playerChoice);
+console.log(result);
+
+// Game 4: 
+
+playerChoice = caseInsensitivePrompt();
+computerHand = getComputerChoice();
+playHand(computerHand, playerChoice);
+console.log(result);
+
+// Game 5: 
+
+playerChoice = caseInsensitivePrompt();
+computerHand = getComputerChoice();
+playHand(computerHand, playerChoice);
+console.log(result);
+
+ 
 
 
 
