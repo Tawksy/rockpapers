@@ -3,6 +3,11 @@ A simple rock paper scissors browser game
 
 06.05.2023: 
 
+Version 1.0.2: 
+
+- Styled the HTML: Added different sections and images 
+- Added CSS styling: colors, fonts, flexbox 
+
 Version 1.0.1: 
 
 - Stabilized the responsible functions to play out the game 
