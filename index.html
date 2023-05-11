@@ -21,29 +21,36 @@
         <h2 class="middle-title mediumtext">As old as ancient times...</h2>
         <h2 class="middle-title mediumtext">Choose your hand...</h2>
         <div class="middle-input-container">
-            <form class="middle-input">
+<!--            <form class="middle-input">
                 <label for="userhand">Enter your hand</label>
                     <input type="text" id="userhand" name="userhand" minlength="4" maxlength="10" required>
                     <button class="buttonplay" type="submit">Play</button>
-            </form>
+            </form> -->
         </div>
-    </div>
+    </div> 
 
     <div class="lower-container">
         <div class="picture-container">
-            <img src="pictures/Rock.png" class="picture">
+            <button type="submit" id="rock"> <img src="pictures/Rock.png" class="picture"></button>
             <h1 class="mediumtext">Rock</h1>
         </div>
         <div class="picture-container">
-            <img src="pictures/Paper.png" class="picture">
+            <button type="submit" id="paper"><img src="pictures/Paper.png" class="picture"></button>
             <h1 class="mediumtext">Paper</h1>
         </div>  
         <div class="picture-container">
-            <img src="pictures/scissors.png" class="picture">
+            <button type="submit" id="scissors"><img src="pictures/scissors.png" class="picture"></button>
             <h1 class="mediumtext">Scissors</h1>
         </div>
     </div>
 
+    <div class="result-container">
+        <div class="result">
+            <h1>Score <br>
+            <span class="font-result">User: <br></span>
+            Computer: </h1>
+        </div>
+    </div>
 </body>
 
 
