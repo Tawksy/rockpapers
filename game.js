@@ -18,7 +18,15 @@ const playableHands = ["rock", "paper", "scissors"];
 
 // result variable 
 
-let result 
+let result = (scoreComputer, scoreUser)
+
+
+let scoreComputer = 0;
+
+
+let userScore = 0; 
+const userScoreDisplay = document.getElementById("userScore");
+userScoreDisplay.textContent += userScore;
 
 // Function to get computers Choice, randomly. 
 
@@ -64,7 +72,11 @@ function playHand() {
     }
 }
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    let userScore = 0;
+    const userScoreDisplay = document.getElementById("userScore");
+    userScoreDisplay.textContent = userScore;
+  });
 
 
 

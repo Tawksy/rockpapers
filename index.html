@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <script src=""></script>
+
 </head>
 
 
@@ -21,11 +21,6 @@
         <h2 class="middle-title mediumtext">As old as ancient times...</h2>
         <h2 class="middle-title mediumtext">Choose your hand...</h2>
         <div class="middle-input-container">
-<!--            <form class="middle-input">
-                <label for="userhand">Enter your hand</label>
-                    <input type="text" id="userhand" name="userhand" minlength="4" maxlength="10" required>
-                    <button class="buttonplay" type="submit">Play</button>
-            </form> -->
         </div>
     </div> 
 
@@ -45,15 +40,21 @@
     </div>
 
     <div class="result-container">
-        <div class="result">
-            <h1>Score <br>
-            <span class="font-result">User: <br></span>
-            Computer: </h1>
+        <div class="liveResult">
+            <h1>Live Score:</h1>
+            <p id="liveScore"></p>
+        <div class="userResult">
+            <h1>User Score:</h1>
+            <p id="userScore"></p>
+        <div class="computerResult">
+            <h1>Computer Score:</h1>
+            <p id="computerScore"></p>
+        </div>
+
+
         </div>
     </div>
 </body>
-
-
 
 <footer>
     <div class="footer-main">
@@ -63,5 +64,7 @@
     </div>
 </footer>
 
+
+<script src="game.js"></script>
 
 </html>

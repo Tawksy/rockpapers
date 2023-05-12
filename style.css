@@ -1,6 +1,10 @@
 
 .body-main {
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .main-container { 
@@ -63,7 +67,10 @@
 
 .result-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 25px;
 
 }
 
