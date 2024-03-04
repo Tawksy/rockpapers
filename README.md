@@ -1,6 +1,11 @@
 # rockpapers
 A simple rock paper scissors browser game
 
+Version 1.0.5:
+04.03.2024 
+
+- Added eventListener to update score accordingly
+
 Version 1.0.4:
 11.05.2023
 
